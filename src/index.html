@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Abrorbek Kodirov Portfolio, Abrorbek Kodirov's website, resume">
+    <title>Pre-Law Society MVCC</title>
+</head>
+
+<body>
+
+    <div class="nav-links">
+        <header><a href="index.html">Pre-Law Society</a></header>
+
+        <nav id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#contact">Contact and Join</a>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+
+    </div>
+    <main>
+        <section class="hero" id="home">
+            <h1>Welcome to the Pre-Law Society at MVCC</h1>
+            <p>Empowering future legal professionals through education, networking, and advocacy.Join us in preparing
+                for law school and beyond.</p>
+            <p>Upcoming Events: </p>
+            <button><a href="#contact">Become a member</a></button>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Our Society</h2>
+            <p class="intro">
+                The Pre-Law Society at Moraine Valley Community College is dedicated to helping students explore careers
+                in law, develop relevant skills, and connect with legal professionals.
+            </p>
+
+            <div class="about-container">
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To guide and support students through their pre-law journey, providing the tools and connections
+                        needed
+                        for law school success.
+                    </p>
+                </div>
+
+                <div class="about-box">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be the premier resource for aspiring lawyers, fostering a community of excellence and
+                        professional
+                        development.
+                    </p>
+                </div>
+
+                <div class="about-box">
+                    <h3>Our Values</h3>
+                    <p>
+                        Integrity, collaboration, and dedication to justice guide everything we do as a community of
+                        future legal
+                        professionals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="leadership" id="leadership">
+            <h2>Our Leadership Team</h2>
+            <p>Meet the dedicated students leading our pre-law community this year.</p>
+            <img src="IMG_7119.JPG" alt="group photo of pre-law society members">
+        </section>
+
+        <section class="contact-join" id="contact">
+            <h2>Contact and Join</h2>
+            <p>Interested in joining the Pre-Law Society? Reach out to us for more information!</p>
+            <form action="https://formspree.io/f/xqawznjd" method="POST">
+                <label>
+                    <p>Your email:</p>
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    <p>Your message:</p>
+                    <textarea name="message"></textarea>
+                </label>
+
+                <button type="submit">Send</button>
+            </form>
+
+        </section>
+
+
+        <footer>
+            <p>Follow us on <a href="https://www.instagram.com/moraineprelaw/" target="_blank">Instagram</a></p>
+            <p>&copy; 2024 Pre-Law Society at MVCC. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+
+            if (navMenu.classList.contains('active')) {
+                toggleBtn.innerHTML = '&times;'; 
+            } else {
+                toggleBtn.innerHTML = '&#9776;'; 
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
