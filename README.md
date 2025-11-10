@@ -6,17 +6,17 @@ A student-created website for the Moraine Valley Community College Pre-Law Socie
 This project is a **student-made website** for the **Pre-Law Society** at Moraine Valley Community College.  
 It was created to practice front-end web development and to highlight the club’s mission, events, and leadership.
 
-### 🎯 Purpose
+### Purpose
 - Provide information about the club’s goals and activities.
 - Encourage student participation and interest in legal studies.
 - Serve as a sample project to demonstrate responsive web design and navigation.
 
-### 🧱 Built With
+### Built With
 - HTML  
 - CSS  
 - JavaScript  
 
-### 💡 Features
+### Features
 - Responsive navigation bar with mobile hamburger menu  
 - Sections for About, Leadership, and Contact  
 - Modern, clean layout inspired by college club websites  
