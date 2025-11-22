@@ -1,342 +1,163 @@
-html {
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-section {
-  scroll-margin-top: 80px;
-  /* adjust depending on navbar height */
-  padding: 40px 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Abrorbek Kodirov Portfolio, Abrorbek Kodirov's website, resume">
+    <title>Pre-Law Society MVCC</title>
+</head>
 
+<body>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #52925e;
-  margin: 0;
-}
+    <div class="nav-links">
+        <header><a href="index.html">Pre-Law Society</a></header>
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-  background: linear-gradient(135deg, #00390a, #00390a);
-}
+        <nav id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact and Join</a>
+        </nav>
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1em;
-}
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
 
-.nav-links a:hover {
-  color: rgb(133, 238, 161);
-  text-decoration: none;
-  margin: 0 1em;
-}
+    </div>
+    <main>
+        <section class="hero" id="home">
+            <h1>Welcome to the Pre-Law Society at MVCC</h1>
+            <p>Empowering future legal professionals through education, networking, and advocacy.Join us in preparing
+                for law school and beyond.</p>
+            <p>Upcoming Events: </p>
+            <button><a href="#contact">Become a member</a></button>
+        </section>
 
-.hero {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  padding: 10em 2em;
-  background: linear-gradient(to bottom, #00390a, #006b1c);
+        <section class="about" id="about">
+            <h2>About Our Society</h2>
+            <p class="intro">
+                The Pre-Law Society at Moraine Valley Community College is dedicated to helping students explore careers
+                in law, develop relevant skills, and connect with legal professionals.
+            </p>
 
-}
+            <div class="about-container">
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To guide and support students through their pre-law journey, providing the tools and connections
+                        needed
+                        for law school success.
+                    </p>
+                </div>
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
+                <div class="about-box">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be the premier resource for aspiring lawyers, fostering a community of excellence and
+                        professional
+                        development.
+                    </p>
+                </div>
 
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
+                <div class="about-box">
+                    <h3>Our Values</h3>
+                    <p>
+                        Integrity, collaboration, and dedication to justice guide everything we do as a community of
+                        future legal
+                        professionals.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-.hero button {
-  background-color: #ffffff;
-  color: 00390a;
-  border: none;
-  padding: 0.8em 2.5em;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 15px;
-  margin-top: 1em;
-}
+        <section class="leadership" id="leadership">
+            <h2>Our Leadership Team</h2>
+            <p>Meet the dedicated students leading our pre-law community this year.</p>
+            <p>Founder: Firdavskhan Dovudov</p>
+            <img src="IMG_7119.JPG" alt="group photo of pre-law society members">
+        </section>
 
-.hero button a {
-  text-decoration: none;
-  color: #00390a;
-}
+        <section class="resources" id="resources">
+            <h2 class="fade-in-up">Resources for Pre-Law Students</h2>
+            <ul>
+                <li><a href="https://www.lsac.org/" target="_blank" class="fade-in-up">&#128204 Law School Admission Council (LSAC)</a>
+                </li>
+                <li><a href="https://www.americanbar.org/" target="_blank" class="fade-in-up">&#128204 American Bar Association (ABA)</a>
+                </li>
+                <li><a href="https://www.top-law-schools.com/" target="_blank" class="fade-in-up">&#128204 Top Law Schools</a></li>
+                <li><a href="https://www.princetonreview.com/law-school-advice" target="_blank" class="fade-in-up">&#128204 Princeton
+                        Review - Law
+                        School Advice</a></li>
+                <li><a href="https://www.morainevalley.edu/academics/departments/pre-law/" target="_blank" class="fade-in-up">&#128204 MVCC
+                        Pre-Law
+                        Department</a></li>
+            </ul>
+        </section>
 
-.hero button:hover {
-  background-color: #bab9b9;
-  cursor: pointer;
-}
+        <section class="contact-join" id="contact">
+            <h2>Contact and Join</h2>
+            <p>Interested in joining the Pre-Law Society? Reach out to us for more information!</p>
+            <form action="https://formspree.io/f/xqawznjd" method="POST">
+                <label>
+                    <p>Your full name:</p>
+                    <input type="name" name="name">
+                </label>
+                <label>
+                    <p>Your student email:</p>
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    <p>Your message:</p>
+                    <textarea name="message"></textarea>
+                </label>
 
-.hero button:active {
-  background-color: #888787;
-}
+                <button type="submit">Send</button>
+            </form>
 
-.about {
-  padding: 6em;
-  background-color: #f3f3f3;
-  text-align: center;
-}
-
-.about h2 {
-  text-align: center;
-  color: #00390a;
-  margin-bottom: 1em;
-  font-size: 2em;
-}
-
-.about .intro {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  color: #333;
-}
-
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.about-box {
-  flex: 1;
-  min-width: 300px;
-  max-width: 350px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-}
-
-.about .about-box:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-  transition: all 0.2s ease;
-}
-
-.about-box h3 {
-  color: #0b4619;
-  margin-bottom: 10px;
-}
-
-.about-box p {
-  color: #333;
-  line-height: 1.6;
-}
-
-.leadership {
-  padding: 6em 2em;
-  background-color: #eaeaea;
-  text-align: center;
-  color: #00390a;
-}
-
-.leadership h2 {
-  margin-bottom: 1.5em;
-  font-size: 2em;
-}
-
-.leadership p {
-  max-width: 700px;
-  margin: 0 auto 2em;
-  color: #333;
-}
-
-.leadership img {
-  max-width: 700px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.leadership img:hover {
-  filter: grayscale(0%);
-}
-
-.resources {
-  padding: 6em 2em;
-  background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
-  text-align: center;
-  color: #002d08;
-}
-
-.resources h2 {
-  margin-bottom: 2em;
-  font-size: 2.3em;
-  font-weight: 700;
-  color: #00390a;
-}
-
-.resources a {
-  display: block;
-  margin: 1.8em auto;
-  padding: 1.5em 1em;
-  background: #00390a;
-  background: linear-gradient(135deg, #004b10, #003307);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 12px;
-  width: 600px;
-  max-width: 90%;
-  font-size: 1.1em;
-  font-weight: 500;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.resources a:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(135deg, #006419, #003307);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
-}
-
-.resources ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(30px) scale(0.97);
-  transition: opacity 1.0s ease, transform 1.0s ease;
-}
-
-/* When visible */
-.fade-in-up.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.contact-join {
-  padding: 6em 2em;
-  background: linear-gradient(to top, #00390a, #006b1c);
-  text-align: center;
-  color: white;
-}
-
-form {
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-form input,
-form textarea {
-  padding: 0.8em;
-  border: none;
-  border-radius: 5px;
-  width: 300px;
-  height: auto;
-
-}
-
-form button {
-  background-color: #52925e;
-  color: white;
-  border: none;
-  padding: 0.8em;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #3e6f45;
-}
-
-footer {
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-}
-
-footer a {
-  color: #04ff00;
-  text-decoration: none;
-}
-
-/* Hide burger icon on desktop */
-.menu-toggle {
-  display: none;
-  font-size: 1.8em;
-  color: white;
-  cursor: pointer;
-}
+        </section>
 
 
+        <footer>
+            <p>Follow us on <a href="https://www.instagram.com/moraineprelaw/" target="_blank">Instagram</a></p>
+            <p>&copy; 2025 Pre-Law Society at MVCC. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+
+            if (navMenu.classList.contains('active')) {
+                toggleBtn.innerHTML = '&times;';
+            } else {
+                toggleBtn.innerHTML = '&#9776;';
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in-up");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
 
 
+</body>
 
-@media (max-width: 768px) {
-
-  header {
-    font-size: 1.2em;
-    margin-top: 1em;
-  }
-
-  .leadership img {
-    max-width: 250px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #00390a;
-  }
-
-  nav.active {
-    display: flex;
-    /* show when toggled */
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 1.8em;
-    color: white;
-    cursor: pointer;
-    align-self: flex-end;
-    position: relative;
-    top: -30px;
-  }
-
-  .nav-links a {
-    margin: 1em;
-  }
-
-  .about .about-box:hover {
-    display: none;
-  }
-
-}
-
-
-
-
-@media (max-width: 768px) {
-  nav {
-    transition: all 0.3s ease-in-out;
-  }
-}
+</html>
