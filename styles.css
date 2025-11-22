@@ -38,7 +38,7 @@ body {
 .hero {
   text-align: center;
   color: rgb(255, 255, 255);
-  padding: 4em 2em;
+  padding: 10em 2em;
   background: linear-gradient(to bottom, #00390a, #006b1c);
 
 }
@@ -89,6 +89,7 @@ body {
   text-align: center;
   color: #00390a;
   margin-bottom: 1em;
+  font-size: 2em;
 }
 
 .about .intro {
@@ -115,6 +116,12 @@ body {
   padding: 30px;
 }
 
+.about .about-box:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.2s ease;
+}
+
 .about-box h3 {
   color: #0b4619;
   margin-bottom: 10px;
@@ -133,7 +140,8 @@ body {
 }
 
 .leadership h2 {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  font-size: 2em;
 }
 
 .leadership p {
@@ -156,6 +164,60 @@ body {
 
 .leadership img:hover {
   filter: grayscale(0%);
+}
+
+.resources {
+  padding: 6em 2em;
+  background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
+  text-align: center;
+  color: #002d08;
+}
+
+.resources h2 {
+  margin-bottom: 2em;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #00390a;
+}
+
+.resources a {
+  display: block;
+  margin: 1.8em auto;
+  padding: 1.5em 1em;
+  background: #00390a;
+  background: linear-gradient(135deg, #004b10, #003307);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  width: 600px;
+  max-width: 90%;
+  font-size: 1.1em;
+  font-weight: 500;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.resources a:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #006419, #003307);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+.resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+/* When visible */
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .contact-join {
@@ -263,7 +325,14 @@ footer a {
   .nav-links a {
     margin: 1em;
   }
+
+  .about .about-box:hover {
+    display: none;
+  }
+
 }
+
+
 
 
 @media (max-width: 768px) {
